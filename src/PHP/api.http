@@ -1,0 +1,19 @@
+
+GET https://eracles-xtreme.fr/api/test_read.php
+
+###
+
+POST https://eracles-xtreme.fr/api/test_create.php
+
+###
+
+PUT https://eracles-xtreme.fr/api/test_update.php
+
+
+###
+
+POST http://localhost/initPHP/site_eracles/src/PHP/test_delete.php
+
+###
+
+GET http://localhost/initPHP/site_eracles/src/PHP/test_read.php
