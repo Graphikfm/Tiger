@@ -1,0 +1,5 @@
+<template>
+<div>
+  <h1>Mes cours</h1>
+</div>
+</template>

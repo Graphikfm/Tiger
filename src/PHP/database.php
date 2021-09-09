@@ -1,10 +1,10 @@
 <?php
 class database {
   public $dbconnect;
-  private $serveurname = 'chair.o2switch.net';
-  private $dbname = 'szhf2149_tiger';
-  private $username = 'szhf2149_tiger';
-  private $password = 'Mw8OfnxGXUfa';
+  private $serveurname = 'localhost';
+  private $dbname = 'eracles';
+  private $username = 'root';
+  private $password = '';
 
   public function __construct() {
     try {

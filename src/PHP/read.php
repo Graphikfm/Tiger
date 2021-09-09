@@ -10,6 +10,7 @@ include_once 'database.php';
 class Read extends database{
 
 	public function getData($table,$field='*',$condition_arr='',$order_by_field='',$order_by_type='desc',$limit=''){
+
 		$sql="select $field from $table ";
 		if($condition_arr!=''){
 			$sql.=' where ';
@@ -31,7 +32,8 @@ class Read extends database{
 		if($limit!=''){
 			$sql.=" limit $limit ";
 		}
-		// die($sql);
+		// database::__construct();
+		// die(var_dump($this->dbconnect));
 		$result=$this->dbconnect->query($sql);
 		if($result->rowCount()>0){
 			$arr=array();
@@ -42,12 +44,6 @@ class Read extends database{
       echo json_encode($arr);
 		}else{
 			echo json_encode(["error" =>"Il n'y a aucun utilisateur dans la base données"]);
-		}
-	}
-
-  public function get_safe_str($str){
-		if($str!=''){
-			return mysqli_real_escape_string($this->dbconnect,$str);
 		}
 	}
 }

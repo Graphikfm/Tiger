@@ -169,16 +169,17 @@
       <p class="text-red-500 text-xs italic">Confirmer</p>
     </div>
     <div class="flex items-center justify-between ">
-      <button v-if="mode == 'login'" type="submit" class="opacity-50
+      <button
+      v-if="mode == 'login'" type="submit" class="
       bg-predator hover:bg-predator-600
       text-white font-bold py-2 px-4
-       rounded focus:outline-none focus:shadow-outline" : >
+       rounded focus:outline-none focus:shadow-outline">
         Se connecter
       </button>
-      <button v-else type="submit" class="disabled:opacity-50 bg-predator
-      hover:bg-predator-600
+      <button @click="createAccount()" v-else type="submit" class="
+      bg-predator hover:bg-predator-600
       text-white font-bold py-2 px-4
-       rounded focus:outline-none focus:shadow-outline" disabled>
+       rounded focus:outline-none focus:shadow-outline">
         S'enregistrer
       </button>
       <a v-if="mode == 'login'" @click="switchToAddUser" class="inline-block align-baseline
@@ -206,6 +207,15 @@ export default {
   data() {
     return {
       mode: 'login',
+      pseudo: '',
+      email: '',
+      mdp: '',
+      objectif: '',
+      morphologie: '',
+      sexe: '',
+      date_naissance: '',
+      nom: '',
+      prenom: '',
     };
   },
   methods: {
@@ -217,6 +227,21 @@ export default {
     switchToSignIn() {
       this.mode = 'login';
     },
+    createAccount() {
+      this.$store.dispatch('createAccount', {
+        email: this.email,
+        pseudo: this.pseudo,
+        mdp: this.mdp,
+        nom: this.nom,
+        prenom: this.prenom,
+        date_naissance: this.date_naissance,
+        objectif: this.objectif,
+        morphologie: this.morphologie,
+        sexe: this.sexe,
+      });
+    },
+  },
+  computed: {
   },
 };
 </script>

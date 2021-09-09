@@ -7,12 +7,24 @@ if($_SERVER['REQUEST_METHOD'] == 'DELETE') {
 include_once 'database.php';
 
 class Delete extends database{
+	public $data;
+	// function __construct(){
+
+	// 	$this->data=json_decode(file_get_contents("php://input"), true);
+	// }
+
+	// public function dumpInfo(){
+	// 	var_dump($this->data);
+		
+	// }
+
 	
   public function deleteData($table,$condition_arr){
 		if($condition_arr!=''){
 			$sql="delete from $table where ";
 			$c=count($condition_arr);	
 			$i=1;
+			
 			foreach($condition_arr as $key=>$val){
 				if($i==$c){
 					$sql.="$key='$val'";
@@ -21,10 +33,16 @@ class Delete extends database{
 				}
 				$i++;
 			}
+			echo $sql;
+			// database::__construct();
+			// die(var_dump($this->dbconnect));
+
 			$result=$this->dbconnect->prepare($sql);
+			$result->execute();
 			print_r($sql);
 		}
 	}
 	}
 }
+
 

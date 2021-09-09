@@ -1,0 +1,97 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?9db65bab7ff3ce999200d5a60f5abc24") format("truetype"),
+url("./flaticon.woff?9db65bab7ff3ce999200d5a60f5abc24") format("woff"),
+url("./flaticon.woff2?9db65bab7ff3ce999200d5a60f5abc24") format("woff2"),
+url("./flaticon.eot?9db65bab7ff3ce999200d5a60f5abc24#iefix") format("embedded-opentype"),
+url("./flaticon.svg?9db65bab7ff3ce999200d5a60f5abc24#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "pencil": "\f101",
+    "draw": "\f102",
+    "coche": "\f103",
+    "case-a-cocher": "\f104",
+    "case-a-cocher-vide": "\f105",
+    "case-a-cocher-1": "\f106",
+    "cas": "\f107",
+    "signet-dans-lagenda": "\f108",
+    "carte-didentite": "\f109",
+    "carte-didentite-1": "\f10a",
+    "book": "\f10b",
+    "placeholder-filled-point": "\f10c",
+    "panier": "\f10d",
+    "bell": "\f10e",
+    "grand-stylo-mecanique": "\f10f",
+    "stylo-plume-de-grande-taille": "\f110",
+    "stopwatch": "\f111",
+    "watch": "\f112",
+);
+
+.flaticon-pencil:before {
+    content: map-get($flaticon-map, "pencil");
+}
+.flaticon-draw:before {
+    content: map-get($flaticon-map, "draw");
+}
+.flaticon-coche:before {
+    content: map-get($flaticon-map, "coche");
+}
+.flaticon-case-a-cocher:before {
+    content: map-get($flaticon-map, "case-a-cocher");
+}
+.flaticon-case-a-cocher-vide:before {
+    content: map-get($flaticon-map, "case-a-cocher-vide");
+}
+.flaticon-case-a-cocher-1:before {
+    content: map-get($flaticon-map, "case-a-cocher-1");
+}
+.flaticon-cas:before {
+    content: map-get($flaticon-map, "cas");
+}
+.flaticon-signet-dans-lagenda:before {
+    content: map-get($flaticon-map, "signet-dans-lagenda");
+}
+.flaticon-carte-didentite:before {
+    content: map-get($flaticon-map, "carte-didentite");
+}
+.flaticon-carte-didentite-1:before {
+    content: map-get($flaticon-map, "carte-didentite-1");
+}
+.flaticon-book:before {
+    content: map-get($flaticon-map, "book");
+}
+.flaticon-placeholder-filled-point:before {
+    content: map-get($flaticon-map, "placeholder-filled-point");
+}
+.flaticon-panier:before {
+    content: map-get($flaticon-map, "panier");
+}
+.flaticon-bell:before {
+    content: map-get($flaticon-map, "bell");
+}
+.flaticon-grand-stylo-mecanique:before {
+    content: map-get($flaticon-map, "grand-stylo-mecanique");
+}
+.flaticon-stylo-plume-de-grande-taille:before {
+    content: map-get($flaticon-map, "stylo-plume-de-grande-taille");
+}
+.flaticon-stopwatch:before {
+    content: map-get($flaticon-map, "stopwatch");
+}
+.flaticon-watch:before {
+    content: map-get($flaticon-map, "watch");
+}

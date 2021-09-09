@@ -12,8 +12,57 @@ PUT https://eracles-xtreme.fr/api/test_update.php
 
 ###
 
-POST http://localhost/initPHP/site_eracles/src/PHP/test_delete.php
+DELETE http://localhost/initPHP/site_eracles/src/PHP/test_delete.php
 
 ###
 
 GET http://localhost/initPHP/site_eracles/src/PHP/test_read.php
+
+###
+
+
+
+
+POST https://www.tiger-xtreme.fr/Tiger/api/test_create.php
+
+###
+DELETE https://www.tiger-xtreme.fr/Tiger/api/test_delete.php
+
+
+###
+GET https://www.tiger-xtreme.fr/Tiger/api/test_read.php
+
+
+###
+PUT https://www.tiger-xtreme.fr/Tiger/api/test_update.php
+
+
+
+
+###
+
+GET http://localhost/initPHP/site_eracles/src/PHP/test_read.php
+
+###
+
+POST http://localhost/initPHP/site_eracles/src/PHP/test_create.php
+
+###
+
+DELETE http://localhost/initPHP/site_eracles/src/PHP/test_delete.php
+
+###
+
+
+###
+
+PUT http://localhost/initPHP/site_eracles/src/PHP/test_update.php
+
+###
+
+
+
+
+GET http://localhost/initPHP/site_eracles/src/PHP/test_open_update.php
+
+###

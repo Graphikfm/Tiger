@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?9db65bab7ff3ce999200d5a60f5abc24") format("truetype"),
+url("./flaticon.woff?9db65bab7ff3ce999200d5a60f5abc24") format("woff"),
+url("./flaticon.woff2?9db65bab7ff3ce999200d5a60f5abc24") format("woff2"),
+url("./flaticon.eot?9db65bab7ff3ce999200d5a60f5abc24#iefix") format("embedded-opentype"),
+url("./flaticon.svg?9db65bab7ff3ce999200d5a60f5abc24#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-pencil:before {
+    content: "\f101";
+}
+.flaticon-draw:before {
+    content: "\f102";
+}
+.flaticon-coche:before {
+    content: "\f103";
+}
+.flaticon-case-a-cocher:before {
+    content: "\f104";
+}
+.flaticon-case-a-cocher-vide:before {
+    content: "\f105";
+}
+.flaticon-case-a-cocher-1:before {
+    content: "\f106";
+}
+.flaticon-cas:before {
+    content: "\f107";
+}
+.flaticon-signet-dans-lagenda:before {
+    content: "\f108";
+}
+.flaticon-carte-didentite:before {
+    content: "\f109";
+}
+.flaticon-carte-didentite-1:before {
+    content: "\f10a";
+}
+.flaticon-book:before {
+    content: "\f10b";
+}
+.flaticon-placeholder-filled-point:before {
+    content: "\f10c";
+}
+.flaticon-panier:before {
+    content: "\f10d";
+}
+.flaticon-bell:before {
+    content: "\f10e";
+}
+.flaticon-grand-stylo-mecanique:before {
+    content: "\f10f";
+}
+.flaticon-stylo-plume-de-grande-taille:before {
+    content: "\f110";
+}
+.flaticon-stopwatch:before {
+    content: "\f111";
+}
+.flaticon-watch:before {
+    content: "\f112";
+}

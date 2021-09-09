@@ -18,9 +18,23 @@ class Create extends database{
 			
 			$field=implode(",",$fieldArr);
 			$value=implode("','",$valueArr);
-			$value="'".$value."'";			
+			print_r($value);
+			$value="'".$value."'";		
 			$sql="insert into $table($field) values($value) ";
-			$result=$this->dbconnect->query($sql);
+			print_r($field);
+			print_r($value);
+			
+				
+	
+				$result=$this->dbconnect->query($sql);
+				// $result->execute();
+			
+			// database::__construct();
+			// die(var_dump($this->dbconnect));
+			
+			
+			
+			
 			print_r($sql);
 		}
 	}

@@ -37,7 +37,7 @@
 <script>
 import axios from 'axios';
 
-<!-- export default {
+export default {
   data() {
     return {
       details: [],

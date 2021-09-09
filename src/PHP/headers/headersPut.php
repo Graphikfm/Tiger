@@ -11,5 +11,5 @@ header('Access-Control-Allow-Methods: PUT');
 // 'Access-Control-Max-Age' permet de spécifier le temps de cache.
 header('Access-Control-Max-Age: 3600');
 // 'Access-Control-Allow-Headers' permet de spécifier les headers autorisés
-header('Acces-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-with');
+header('Acces-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
 // verif si la methode utilisée est correcte pour une api rest
